@@ -1,0 +1,283 @@
+.hamburger-menu .menu, .card-overlay, .card-img {
+  height: 100%;
+  width: 100%; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #262626; }
+
+.navbar {
+  z-index: 200;
+  position: relative; }
+  .navbar-navigation {
+    display: flex; }
+    .navbar-navigation-left {
+      width: 50vw;
+      height: 100vh;
+      background-color: #262626;
+      position: fixed;
+      left: -50vw;
+      transition: all 0.3s; }
+      .navbar-navigation-left .left-img {
+        width: 50%;
+        position: absolute;
+        border-radius: 10%;
+        opacity: 0.7;
+        box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.7); }
+      .navbar-navigation-left .left-img-1 {
+        left: 15%;
+        top: 15%; }
+      .navbar-navigation-left .left-img-2 {
+        left: 25%;
+        top: 35%; }
+      .navbar-navigation-left .left-img-3 {
+        left: 35%;
+        top: 59%; }
+    .navbar-navigation-right {
+      width: 50vw;
+      height: 100vh;
+      background-color: #1f1d1d;
+      position: fixed;
+      right: -50vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s; }
+      .navbar-navigation-right .nav-list-item {
+        list-style: none; }
+      .navbar-navigation-right .nav-list-link {
+        letter-spacing: 2px;
+        text-transform: capitalize;
+        font-weight: 300;
+        display: block;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 40px;
+        color: #d3ab55;
+        text-decoration: none;
+        margin: 20px;
+        transition: all 0.7s; }
+        .navbar-navigation-right .nav-list-link:hover {
+          color: #bbb;
+          letter-spacing: 10px; }
+
+.header {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(/images/bg-ind2.jpg) center no-repeat;
+  background-attachment: fixed;
+  background-size: inherit; }
+  .header .brand {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .header-banner {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.about-us {
+  height: 90vh;
+  display: flex;
+  align-items: center; }
+  .about-us-left {
+    width: 40%;
+    position: relative;
+    left: -50px; }
+    .about-us-left img {
+      width: 100%;
+      opacity: 0.8; }
+  .about-us-right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .about-us-right .description {
+      font-family: "Dancing Script", cursive;
+      margin-right: 30px;
+      font-size: 25px;
+      color: #bbb;
+      margin-bottom: 15px;
+      text-align: justify;
+      line-height: 30px;
+      letter-spacing: 2px; }
+
+.gallery .cards-wrapper {
+  display: flex;
+  flex-wrap: wrap; }
+
+.footer {
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .footer-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px; }
+  .footer .social-media {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px; }
+    .footer .social-media-item {
+      list-style: none; }
+    .footer .social-media-link {
+      color: #bbb;
+      transition: font-size 0.7s; }
+      .footer .social-media-link:hover {
+        color: #d3ab55;
+        cursor: pointer;
+        font-size: 30px; }
+  .footer-copyright-paragragh {
+    font-family: "Josefin Sans", sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #bbb; }
+
+.hamburger-menu {
+  width: 40px;
+  height: 40px;
+  top: 10%;
+  right: 5%;
+  position: fixed;
+  z-index: 300; }
+  .hamburger-menu .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #d3ab55; }
+  .hamburger-menu #menu-icon {
+    transition: all 0.5s; }
+
+.logo {
+  color: #d3ab55;
+  font-size: 70px;
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  border: 3px solid #d3ab55;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px; }
+
+.main-name {
+  font-family: "Nunito", sans-serif;
+  font-size: 40px;
+  color: #bbb;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300; }
+
+.sub-name {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  color: #bbb;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center; }
+
+.main-heading {
+  font-size: 100px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 300;
+  color: #d3ab55;
+  margin-bottom: 40px; }
+
+.sub-heading {
+  color: #bbb;
+  font-size: 60px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  font-family: "Dancing Script", cursive; }
+
+.main-btn {
+  font-family: "Josefin Sans", sans-serif;
+  width: 120px;
+  height: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
+  background: transparent;
+  color: #d3ab55;
+  border: 1px solid #d3ab55;
+  cursor: pointer;
+  transition: background 2s, border-radius 1.5s, color 1s, transform 2s, height 0.5s, width 0.5s, font-size 2s; }
+  .main-btn:hover {
+    font-size: 15px;
+    border-radius: 50%;
+    background: #d3ab55;
+    color: #262626;
+    width: 120px;
+    height: 120px; }
+
+.card {
+  width: 33.333%;
+  height: 30vw;
+  position: relative;
+  overflow: hidden; }
+  .card:hover .card-overlay {
+    top: 0; }
+  .card-overlay {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    background: rgba(211, 171, 85, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: top 1s; }
+    .card-overlay-heading {
+      font-family: "Nunito", sans-serif;
+      font-size: 45px;
+      letter-spacing: 2px;
+      text-transform: capitalize;
+      font-weight: 300;
+      margin-bottom: 30px; }
+    .card-overlay-paragraph {
+      font-size: 30px;
+      font-family: "Josefin Sans", sans-serif;
+      letter-spacing: 2px;
+      text-transform: capitalize;
+      font-weight: 300;
+      margin-bottom: 30px; }
+    .card-overlay-btn {
+      width: 150px;
+      height: 50px;
+      color: white;
+      background: transparent;
+      font-family: "Nunito", sans-serif;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 300;
+      font-weight: bold;
+      outline: none;
+      cursor: pointer;
+      border: 1px solid #d3ab55;
+      transition: border-radius 0.5s, background-color 1s, color 1.2s, font-family 0.9s, font-weight 1.3s; }
+      .card-overlay-btn:hover {
+        border-radius: 50%;
+        background-color: white;
+        color: black;
+        font-family: "Dancing Script", cursive;
+        font-weight: bold; }
+  .card-img {
+    object-fit: cover;
+    opacity: 0.7; }
